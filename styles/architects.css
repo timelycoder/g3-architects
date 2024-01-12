@@ -17,3 +17,76 @@ html {
 body {
   box-sizing: border-box;
 }
+
+/*header section*/
+
+header {
+  /* background: rgba(255, 144, 14, 0.10); */
+  background: rgba(255, 144, 14, 0.5);
+  padding: 50px 240px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  color: #131313;
+  font-size: 4.5rem;
+}
+
+nav>ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 30px;
+  font-size: 1.8rem;
+
+  font-style: normal;
+  font-weight: 500;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #424242;
+}
+
+.banner-content {
+  width: 862px;
+  text-align: center;
+  margin: 0 auto;
+
+
+}
+
+.banner-content * {
+  margin-bottom: 32px;
+}
+
+.banner-title {
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.banner-description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.btn-primery {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #FF900E;
+  border: none;
+  padding: 21px 25px;
+
+}
