@@ -30,6 +30,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .nav-title {
@@ -45,6 +46,7 @@ nav li {
   list-style: none;
   margin-right: 30px;
   font-size: 1.8rem;
+  font-weight: 500;
 
   font-style: normal;
   font-weight: 500;
@@ -56,9 +58,10 @@ nav li a {
 }
 
 .banner-content {
-  width: 862px;
+  max-width: 800px;
   text-align: center;
   margin: 0 auto;
+
 
 
 }
@@ -68,15 +71,17 @@ nav li a {
 }
 
 .banner-title {
-  font-size: 6.4rem;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 700;
+  color: #131313;
 }
 
 .banner-description {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  color: #727272;
 }
 
 .btn-primery {
@@ -89,4 +94,46 @@ nav li a {
   border: none;
   padding: 21px 25px;
 
+}
+
+
+
+
+/* .banner img {
+  width: 100%;
+  margin: 0 auto;
+  *****marzin dile niche scroll bar ase . r picture left nea dor ker .eact center a
+
+} */
+
+
+.banner img {
+  width: 100%;
+  margin-top: 20px;
+
+}
+
+/* responsive media queries..............*/
+
+@media screen and (max-width:576px) {
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+}
+
+/* tablet or medium devices.....................*/
+
+@media screen and (min-width:577) and (max-width:967) {
+  nav {
+    flex-direction: column;
+  }
+
+  header {
+    padding: 40px;
+  }
 }
