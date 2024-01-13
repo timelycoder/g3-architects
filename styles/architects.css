@@ -58,7 +58,7 @@ nav li a {
 }
 
 .banner-content {
-  max-width: 800px;
+  max-width: 600px;
   text-align: center;
   margin: 0 auto;
 
@@ -96,22 +96,190 @@ nav li a {
 
 }
 
-
-
-
-/* .banner img {
-  width: 100%;
-  margin: 0 auto;
-  *****marzin dile niche scroll bar ase . r picture left nea dor ker .eact center a
-
-} */
-
-
 .banner img {
   width: 100%;
   margin-top: 20px;
+  margin: 0 auto;
 
 }
+
+
+
+
+
+
+/* main section ................... */
+
+main {
+  max-width: 1440px;
+  margin: 85px 85px;
+}
+
+/* team styles ............... */
+.team-container {
+  display: flex;
+  align-items: center;
+}
+
+.team-img-container {
+  margin-right: 76px;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+
+}
+
+.team-img-container * {
+  margin: 18px 18px;
+  border-radius: 8px;
+  background: url(<path-to-image>), lightgray -85.564px 0px / 150.038% 100% no-repeat;
+
+}
+
+
+
+
+.team-content * {
+  margin-bottom: 26px;
+}
+
+.team-content.team-title {}
+
+.title-quick {
+  color: var(--Dark-03, #727272);
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.title-our {
+  color: var(--Dark-01, #131313);
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.title-features {
+  color: #FF900E;
+  font-family: Work Sans;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.team-description {
+  color: #727272;
+}
+
+/* <!-- features section............... --> */
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 15px;
+}
+
+.features-content {
+  width: 531px;
+
+  margin-right: 146px;
+}
+
+.features-content h3 {
+  color: var(--Dark-01, #131313);
+  font-family: Work Sans;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.features-description {
+  color: var(--Dark-03, #727272);
+  font-family: Work Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 162.5% */
+}
+
+.features-mini-section {
+  margin: 30px 15px;
+}
+
+.features-content h5 {
+  color: var(--Dark-01, #131313);
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+
+}
+
+.features-img {
+  width: 531px;
+
+
+  border-radius: 8px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.features-img img {
+  width: 100%;
+}
+
+/* ten-years-badge ............... */
+.ten-years-badge {
+  width: 256px;
+  border-radius: 8px;
+  background: #FF900E;
+  text-align: center;
+  /* padding: 406px auto; .............padding kaz kore na kano*/
+}
+
+.ten-years-badge h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Work Sans;
+
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+
+  /* 107.692% */
+}
+
+.ten-years-badge p {
+  color: #FFF;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive media queries..............*/
 
@@ -135,5 +303,18 @@ nav li a {
 
   header {
     padding: 40px;
+  }
+}
+
+/*responsive for main features section*/
+
+@media screen and (max-width:576px) {
+  .team-container {
+    flex-direction: column-reverse
+  }
+
+  .team-img-container * {
+    margin: 14px 14px;
+    /* padding: 14px 14px; */
   }
 }
